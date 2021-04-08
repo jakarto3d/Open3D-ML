@@ -406,7 +406,7 @@ class SemanticSegmentation(BasePipeline):
                     continue
 
                 self.optimizer.zero_grad()
-                # loss.backward()
+                loss.backward()
                 if model.cfg.get('grad_clip_norm', -1) > 0:
                     torch.nn.utils.clip_grad_value_(model.parameters(),
                                                     model.cfg.grad_clip_norm)
