@@ -8,6 +8,7 @@ from .parislille3d import ParisLille3D
 from .toronto3d import Toronto3D
 from .customdataset import Custom3D
 from .semantic3d import Semantic3D
+from .jakarto3d import Jakarto3D
 from .inference_dummy import InferenceDummySplit
 from .samplers import SemSegRandomSampler, SemSegSpatiallyRegularSampler
 from . import utils

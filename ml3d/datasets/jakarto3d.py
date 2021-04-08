@@ -3,12 +3,8 @@ import os, sys, glob, pickle
 from pathlib import Path
 from os.path import join, exists, dirname, abspath
 import random
-from plyfile import PlyData, PlyElement
 import jaklas
-from sklearn.neighbors import KDTree
-from tqdm import tqdm
 import logging
-import numpy as np
 
 # from .base_dataset import BaseDataset, BaseDatasetSplit
 # from ..utils import make_dir, DATASET
@@ -25,8 +21,8 @@ log = logging.getLogger(__name__)
 
 class Jakarto3D(BaseDataset):
     """
-    This class is used to create a dataset based on the ParisLille3D dataset, and used in visualizer, training, or testing. The ParisLille3D dataset is best used to train models for urban infrastructure. 
-	You can download the dataset from https://npm3d.fr/paris-lille-3d.
+    This class is used to create a dataset based on the Jakarto3D dataset, and used in visualizer, training, or testing. 
+    You can download Jakarto3D dataset on TODO url
     """
 
     def __init__(self, dataset_path, name='Jakarto3D', **kwargs):
